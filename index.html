@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Compliment Generator</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+      max-width: 500px;
+      min-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>click the button if you want a compliment
+  <button id="btn">click me for a compliment</button>
+  <p id="output"></p>
+  <p id="cat">hope it made your day😁</p>
+  <p>there are over 200 compliments to make you happy when you need it</p>
+  
+
+  <script>
+    const button = document.querySelector("#btn");
+    const output = document.querySelector("#output");
+
+    const texts = [
+      "You are amazing.",
+      "You are brilliant.",
+      "You are inspiring.",
+      "You are thoughtful.",
+      "You are kind.",
+      "You are strong.",
+      "You are capable.",
+      "You are creative.",
+      "You are resilient.",
+      "You are incredible.",
+      "You are generous.",
+      "You are radiant.",
+      "You are exceptional.",
+      "You are remarkable.",
+      "You are admirable.",
+      "You are outstanding.",
+      "You are fantastic.",
+      "You are talented.",
+      "You are wise.",
+      "You are genuine.",
+      "You are courageous.",
+      "You are dependable.",
+      "You are compassionate.",
+      "You are impressive.",
+      "You are uplifting.",
+      "You are delightful.",
+      "You are powerful.",
+      "You are determined.",
+      "You are unique.",
+      "You are supportive.",
+      "You are phenomenal.",
+      "You are confident.",
+      "You are graceful.",
+      "You are hardworking.",
+      "You are honest.",
+      "You radiate positivity.",
+      "You have a heart of gold.",
+      "You are endlessly inspiring.",
+      "You are absolutely stunning.",
+	  "You are extraordinary.",
+"You are full of potential.",
+"You light up every room.",
+"You make the world better.",
+"You are deeply appreciated.",
+"You have incredible energy.",
+"You are wonderfully authentic.",
+"You are beautifully unique.",
+"You are a true original.",
+"You are refreshingly honest.",
+"You are incredibly thoughtful.",
+"You are a natural leader.",
+"You are wise beyond your years.",
+"You are effortlessly cool.",
+"You are full of bright ideas.",
+"You are a joy to be around.",
+"You are genuinely caring.",
+"You are quietly powerful.",
+"You are boldly yourself.",
+"You are deeply inspiring.",
+"You have a beautiful spirit.",
+"You are amazingly resilient.",
+"You are strong-minded.",
+"You are emotionally intelligent.",
+"You are wonderfully patient.",
+"You are brilliantly creative.",
+"You are truly special.",
+"You are a great listener.",
+"You are incredibly reliable.",
+"You are gracefully confident.",
+"You are bright and capable.",
+"You are filled with purpose.",
+"You are naturally uplifting.",
+"You are smart and resourceful.",
+"You are fearless in growth.",
+"You are beautifully determined.",
+"You are incredibly hardworking.",
+"You are an excellent problem solver.",
+"You are radiantly positive.",
+"You are deeply empathetic.",
+"You are remarkably strong.",
+"You are courageously kind.",
+"You are brilliantly authentic.",
+"You are wonderfully grounded.",
+"You are endlessly motivated.",
+"You are inspiring to others.",
+"You are incredibly dependable.",
+"You are full of integrity.",
+"You are always improving.",
+"You are beautifully expressive.",
+"You are exceptionally focused.",
+"You are amazingly thoughtful.",
+"You are a positive influence.",
+"You are impressively disciplined.",
+"You are wonderfully balanced.",
+"You are naturally encouraging.",
+"You are confidently capable.",
+"You are strong in character.",
+"You are full of wisdom.",
+"You are creatively brilliant.",
+"You are always learning.",
+"You are deeply valued.",
+"You are refreshingly optimistic.",
+"You are remarkably talented.",
+"You are genuinely supportive.",
+"You are courageously ambitious.",
+"You are beautifully composed.",
+"You are incredibly sharp.",
+"You are peacefully strong.",
+"You are full of heart.",
+"You are naturally inspiring.",
+"You are highly capable.",
+"You are thoughtfully intelligent.",
+"You are confidently growing.",
+"You are wonderfully sincere.",
+"You are uniquely gifted.",
+"You are positively impactful.",
+"You are deeply respected.",
+"You are impressively organized.",
+"You are full of great ideas.",
+"You are gracefully strong.",
+"You are beautifully confident.",
+"You are powerfully driven.",
+"You are incredibly adaptable.",
+"You are brilliantly determined.",
+"You are genuinely remarkable.",
+"You are wonderfully vibrant.",
+"You are calmly confident.",
+"You are deeply understanding.",
+"You are extraordinarily kind.",
+"You are boldly creative.",
+"You are remarkably insightful.",
+"You are beautifully resilient.",
+"You are sincerely inspiring.",
+"You are exceptionally bright.",
+"You are thoughtfully brave.",
+"You are wonderfully capable.",
+"You are positively amazing."
+
+    ];
+
+    button.addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * texts.length);
+      output.textContent = texts[randomIndex];
+    });
+  </script>
+
+</body>
+</html>
